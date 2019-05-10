@@ -24,6 +24,7 @@ class DefaultController extends AbstractController
 
         return $this->render('index.html.twig',
             ['base_dir' => realpath($this->getParameter('kernel.project_dir')).DIRECTORY_SEPARATOR,
+              'number' => $number
             ]);
     }
 }
