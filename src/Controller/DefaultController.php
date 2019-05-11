@@ -27,4 +27,12 @@ class DefaultController extends AbstractController
               'number' => $number
             ]);
     }
+
+    /**
+     * @Route("/feedback", name="feedback")
+     */
+    public function feedback()
+    {
+        die('php bin/console make:controller AcmeBlogBundle');
+    }
 }
